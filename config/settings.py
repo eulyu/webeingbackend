@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'shop',
     'cart',
     'coupon',
+    'order',
 ]
 
 MIDDLEWARE = [
@@ -122,4 +123,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
+
 CART_ID = 'cart_in_session'
+
+IAMPORT_KEY = '9109082069216004'
+IAMPORT_SECRET = 'sl59SRbOZeN0544HZmQEsS8Ntj6thkoKFuTyl5nlkampfq7fNYTfR13kl9ODtcn9GhI2n5nHgK7waeLX'
